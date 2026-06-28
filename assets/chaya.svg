@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#a24d2d"/>
+      <stop offset="1" stop-color="#f0c9a9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <rect x="120" y="250" width="120" height="230" rx="10" fill="#fff" opacity=".3"/>
+  <rect x="280" y="220" width="135" height="260" rx="10" fill="#fff" opacity=".38"/>
+  <rect x="455" y="240" width="120" height="240" rx="10" fill="#fff" opacity=".28"/>
+  <rect x="615" y="210" width="150" height="270" rx="10" fill="#fff" opacity=".34"/>
+  <rect x="805" y="230" width="130" height="250" rx="10" fill="#fff" opacity=".3"/>
+  <text x="70" y="110" fill="#fff" font-size="64" font-family="Noto Sans TC, sans-serif">東茶屋街</text>
+  <text x="70" y="188" fill="#fff" font-size="30" font-family="Noto Sans TC, sans-serif">保存良好的茶屋街區</text>
+</svg>

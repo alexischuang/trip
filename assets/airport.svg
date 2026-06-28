@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#2f6f68"/>
+      <stop offset="1" stop-color="#9bc8c2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <circle cx="940" cy="120" r="140" fill="#fff" opacity=".16"/>
+  <rect x="130" y="360" width="940" height="170" rx="28" fill="#fff" opacity=".18"/>
+  <rect x="180" y="250" width="520" height="80" rx="18" fill="#fff" opacity=".16"/>
+  <rect x="720" y="220" width="220" height="260" rx="18" fill="#fff" opacity=".28"/>
+  <path d="M850 210l70 35-20 42-70-35z" fill="#fff" opacity=".55"/>
+  <text x="70" y="110" fill="#fff" font-size="64" font-family="Noto Sans TC, sans-serif">中部國際機場</text>
+  <text x="70" y="188" fill="#fff" font-size="30" font-family="Noto Sans TC, sans-serif">名古屋的空中門戶</text>
+</svg>

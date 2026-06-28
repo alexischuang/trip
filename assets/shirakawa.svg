@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#b7d7ea"/>
+      <stop offset="1" stop-color="#f5efe6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <path d="M110 445L250 255L390 445H110Z" fill="#fff" opacity=".8"/>
+  <path d="M320 465L490 215L680 465H320Z" fill="#fff" opacity=".84"/>
+  <path d="M615 455L785 245L960 455H615Z" fill="#fff" opacity=".78"/>
+  <rect x="90" y="520" width="1020" height="72" rx="18" fill="#fff" opacity=".22"/>
+  <text x="70" y="110" fill="#2e261f" font-size="64" font-family="Noto Sans TC, sans-serif">白川鄉合掌村</text>
+  <text x="70" y="188" fill="#2e261f" font-size="30" font-family="Noto Sans TC, sans-serif">童話世界般的合掌屋聚落</text>
+</svg>

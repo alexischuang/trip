@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#98b1c7"/>
+      <stop offset="1" stop-color="#e9ddd1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <rect x="140" y="180" width="920" height="340" rx="24" fill="#fff" opacity=".22"/>
+  <rect x="220" y="250" width="760" height="180" rx="18" fill="#fff" opacity=".18"/>
+  <text x="70" y="110" fill="#fff" font-size="64" font-family="Noto Sans TC, sans-serif">AEON 購物中心</text>
+  <text x="70" y="188" fill="#fff" font-size="30" font-family="Noto Sans TC, sans-serif">大型複合商場，最適合最後補貨</text>
+</svg>

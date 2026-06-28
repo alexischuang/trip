@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#a24d2d"/>
+      <stop offset="1" stop-color="#e8c0a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <rect x="140" y="240" width="920" height="260" rx="20" fill="#fff" opacity=".22"/>
+  <circle cx="260" cy="330" r="48" fill="#fff" opacity=".32"/>
+  <circle cx="940" cy="330" r="48" fill="#fff" opacity=".32"/>
+  <text x="70" y="110" fill="#fff" font-size="64" font-family="Noto Sans TC, sans-serif">大須觀音</text>
+  <text x="70" y="188" fill="#fff" font-size="30" font-family="Noto Sans TC, sans-serif">寺院與商圈共生</text>
+</svg>

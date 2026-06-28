@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#3f7f73"/>
+      <stop offset="1" stop-color="#e7ddcf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <circle cx="930" cy="160" r="120" fill="#fff" opacity=".12"/>
+  <circle cx="260" cy="180" r="90" fill="#fff" opacity=".1"/>
+  <path d="M180 520C300 390 420 390 560 520S820 650 1040 500" stroke="#fff" stroke-width="26" fill="none" opacity=".2"/>
+  <rect x="120" y="500" width="960" height="92" rx="18" fill="#fff" opacity=".14"/>
+  <text x="70" y="110" fill="#fff" font-size="64" font-family="Noto Sans TC, sans-serif">兼六園</text>
+  <text x="70" y="188" fill="#fff" font-size="30" font-family="Noto Sans TC, sans-serif">日本三大名園之一</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#364b3d"/>
+      <stop offset="1" stop-color="#b9c9b5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <rect x="380" y="120" width="440" height="520" rx="24" fill="#fff" opacity=".18"/>
+  <rect x="470" y="170" width="260" height="430" rx="14" fill="#fff" opacity=".22"/>
+  <text x="70" y="110" fill="#fff" font-size="64" font-family="Noto Sans TC, sans-serif">名古屋中央塔樓</text>
+  <text x="70" y="188" fill="#fff" font-size="30" font-family="Noto Sans TC, sans-serif">車站上方的城市地標</text>
+</svg>
