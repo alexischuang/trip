@@ -6,30 +6,44 @@
   <meta name="description" content="中部北陸五日旅遊導覽，含住宿候選、Google 地圖連結與照片圖卡。" />
   <title>樂樂組-日本中部北陸五日旅行行程</title>
   <style>
-    :root{--bg:#f5efe6;--paper:rgba(255,251,246,.94);--ink:#2e261f;--muted:#6b5b4d;--line:rgba(71,55,41,.12);--accent:#a24d2d;--accent-2:#2f6f68;--accent-3:#b98b3d;--shadow:0 20px 60px rgba(58,39,25,.12)}
+    :root{--bg:#f3eadc;--paper:rgba(255,251,246,.95);--ink:#2e261f;--muted:#6b5b4d;--line:rgba(71,55,41,.12);--accent:#a24d2d;--accent-2:#2f6f68;--accent-3:#b98b3d;--accent-4:#6f8b5a;--shadow:0 22px 70px rgba(58,39,25,.14)}
     *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:radial-gradient(circle at top left,rgba(162,77,45,.14),transparent 32%),radial-gradient(circle at 90% 10%,rgba(47,111,104,.15),transparent 28%),linear-gradient(180deg,var(--bg),#fffaf4 42%,#f9f2e7 100%);min-height:100vh}
+    body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:
+      radial-gradient(circle at top left,rgba(162,77,45,.16),transparent 32%),
+      radial-gradient(circle at 90% 10%,rgba(47,111,104,.14),transparent 28%),
+      radial-gradient(circle at 20% 85%,rgba(111,139,90,.12),transparent 22%),
+      linear-gradient(180deg,var(--bg),#fffaf4 42%,#f8f1e4 100%);
+      min-height:100vh;position:relative;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;background-image:radial-gradient(rgba(71,55,41,.05) 1px, transparent 1px);background-size:18px 18px;opacity:.18;pointer-events:none}
     .wrap{max-width:1240px;margin:0 auto;padding:32px 20px 60px}
     .hero,.day{box-shadow:var(--shadow);border:1px solid rgba(71,55,41,.12);overflow:hidden}
-    .hero{background:linear-gradient(135deg,rgba(255,255,255,.86),rgba(255,247,239,.78));border-radius:28px;padding:28px;position:relative}
+    .hero{background:
+      linear-gradient(135deg,rgba(255,255,255,.88),rgba(255,247,239,.80)),
+      linear-gradient(90deg,rgba(162,77,45,.06) 0 1px, transparent 1px 100%);
+      border-radius:28px;padding:28px;position:relative}
+    .hero::after{content:"";position:absolute;right:-80px;top:-70px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(162,77,45,.10),transparent 62%)}
     .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(162,77,45,.08);border-radius:999px;padding:8px 14px}
     h1{margin:16px 0 10px;font-size:clamp(32px,5vw,54px);line-height:1.05}
     .lead{max-width:900px;font-size:16px;line-height:1.9;color:var(--muted);margin:0 0 22px}
     .stats,.photo-grid,.route{display:grid;gap:12px}
     .stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:18px}
     .stat,.stop,.photo-card{border:1px solid var(--line);background:rgba(255,255,255,.82)}
-    .stat{border-radius:20px;padding:14px 16px}.stat b{display:block;font-size:18px;margin-bottom:4px}.stat span{color:var(--muted);font-size:13px;line-height:1.5}
-    .nav{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 30px}.nav a{color:var(--ink);text-decoration:none;background:rgba(255,255,255,.72);border:1px solid var(--line);padding:10px 14px;border-radius:999px;font-size:14px}
+    .stat{border-radius:20px;padding:14px 16px;backdrop-filter:blur(4px)}.stat b{display:block;font-size:18px;margin-bottom:4px}.stat span{color:var(--muted);font-size:13px;line-height:1.5}
+    .nav{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 30px}.nav a{color:var(--ink);text-decoration:none;background:rgba(255,255,255,.72);border:1px solid var(--line);padding:10px 14px;border-radius:999px;font-size:14px;box-shadow:0 8px 18px rgba(58,39,25,.05)}
     .section-title{margin:34px 0 14px;display:flex;align-items:baseline;justify-content:space-between;gap:12px}.section-title h2{margin:0;font-size:26px}.section-title p{margin:0;color:var(--muted);font-size:14px}
     .day{margin-top:16px;background:var(--paper);border-radius:28px}
     .day-head{padding:22px 22px 0;display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start}.badge{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:10px 14px;border-radius:18px;color:#fff;font-weight:700;background:linear-gradient(135deg,var(--accent),#d67a4d)}
     .day-head h3{margin:0 0 6px;font-size:24px}.day-head p{margin:0;color:var(--muted);line-height:1.8}
-    .photo-grid{grid-template-columns:repeat(3,minmax(0,1fr));padding:18px 22px 0}
-    .photo-card{border-radius:24px;min-height:170px;position:relative;box-shadow:0 16px 30px rgba(58,39,25,.10);overflow:hidden;background:#e8dfd2;border:6px solid rgba(255,255,255,.82);transform:rotate(-1deg)}
+    .photo-grid{grid-template-columns:repeat(3,minmax(0,1fr));padding:18px 22px 0;align-items:stretch}
+    .photo-grid.carousel-ready{grid-template-columns:1fr}
+    .photo-card{border-radius:24px;min-height:170px;position:relative;box-shadow:0 16px 30px rgba(58,39,25,.10);overflow:hidden;background:#e8dfd2;border:6px solid rgba(255,255,255,.82);transform:rotate(-1deg);transition:opacity .45s ease, transform .45s ease, filter .45s ease}
     .photo-card:nth-child(2){transform:rotate(1deg) translateY(6px)}
     .photo-card:nth-child(3){transform:rotate(-.5deg) translateY(-2px)}
     .photo-card img{display:block;width:100%;height:170px;object-fit:cover}
     .photo-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,10,7,.02) 15%,rgba(15,10,7,.56) 100%);pointer-events:none}
+    .photo-grid.carousel-ready .photo-card{display:none;transform:none;animation:none}
+    .photo-grid.carousel-ready .photo-card.is-active{display:block}
+    .photo-grid.carousel-ready .photo-card.is-active img{height:min(320px,52vw)}
     .photo-label{position:absolute;left:14px;right:14px;bottom:14px;z-index:1;color:#fff;font-size:14px;line-height:1.55}.photo-label b{display:block;font-size:17px;margin-bottom:4px}
     .card-source{display:block;margin-top:4px;font-size:12px;opacity:.9}
     .route{padding:20px 22px 22px;grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -39,7 +53,9 @@
     .actions{display:flex;flex-wrap:wrap;gap:10px;padding-left:8px;margin-top:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:700}.btn-map{color:#fff;background:linear-gradient(135deg,var(--accent-2),#3d8f87)}.btn-photo{color:var(--ink);background:rgba(255,255,255,.8);border:1px solid var(--line)}
     .callout{margin:14px 22px 22px;background:linear-gradient(135deg,rgba(47,111,104,.1),rgba(162,77,45,.08));border:1px solid rgba(47,111,104,.12);border-radius:22px;padding:18px 20px}.callout b{color:var(--accent-2)}
     .footer-note{margin-top:28px;color:var(--muted);font-size:13px;line-height:1.8;padding:0 4px}
-    @media (max-width:920px){.stats,.route,.photo-grid,.day-head{grid-template-columns:1fr}.section-title{flex-direction:column;align-items:flex-start}.badge{width:fit-content}}
+    @media (max-width:920px){.stats,.route,.photo-grid,.day-head{grid-template-columns:1fr}.section-title{flex-direction:column;align-items:flex-start}.badge{width:fit-content}.photo-grid.carousel-ready .photo-card.is-active img{height:220px}}
+    @keyframes floatPaper{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+    .hero{animation:floatPaper 10s ease-in-out infinite}
   </style>
 </head>
 <body>
@@ -148,6 +164,24 @@
   </article>
   <div class="footer-note">照片區塊已改成內嵌圖卡，避免外站載入失敗；活動註記為依各景點夏季常態做的實用提醒，出發前仍建議再看一次官方公告。</div>
 </div>
+<script>
+  (function () {
+    const grids = Array.from(document.querySelectorAll('.photo-grid'));
+    grids.forEach((grid) => {
+      const cards = Array.from(grid.querySelectorAll('.photo-card'));
+      if (cards.length < 2) return;
+      grid.classList.add('carousel-ready');
+      let index = 0;
+      const show = (nextIndex) => {
+        cards.forEach((card, i) => card.classList.toggle('is-active', i === nextIndex));
+        index = nextIndex;
+      };
+      show(0);
+      const interval = Math.min(5000, Math.max(2800, 1800 + cards.length * 500));
+      setInterval(() => show((index + 1) % cards.length), interval);
+    });
+  })();
+</script>
 </body>
 </html>
 
